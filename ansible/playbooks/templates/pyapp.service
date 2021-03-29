@@ -1,0 +1,9 @@
+[Unit]
+Description=Wall post application
+
+[Service]
+ExecStart=/opt/application/venv/bin/python /opt/application/__main__.py
+WorkingDirectory=/opt/application
+
+[Install]
+WantedBy=multi-user.target

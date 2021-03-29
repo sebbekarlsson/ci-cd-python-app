@@ -1,0 +1,14 @@
+- hosts: web
+  tasks:
+  - name: "copy over python app"
+    copy:
+      src: "../../app.tar.gz"
+      dest: /opt/
+  - name: "Extract application" 
+    shell: tar xzf app.tar.gz
+    args:
+      chdir: /opt/
+  - name: "copy service files"
+    template:
+      src: pyapp.service
+      dest: /etc/systemd/system/.

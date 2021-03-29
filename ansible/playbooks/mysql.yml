@@ -1,0 +1,6 @@
+- hosts: web
+  tasks:
+  - name: "Setup database" 
+    shell: bash ./install_mysql.sh >> mysql.log
+    args:
+      chdir: /opt/application

@@ -1,0 +1,6 @@
+- hosts: web
+  tasks:
+  - name: "install virtualenv"
+    apt:
+      name: ['python3-virtualenv', 'virtualenv', 'mariadb-server']
+      state: latest 

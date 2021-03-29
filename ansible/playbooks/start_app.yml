@@ -1,0 +1,6 @@
+- hosts: web
+  tasks:
+  - name: Change the working directory before executing the command.
+    shell: bash ./run.sh >> log.txt
+    args:
+      chdir: /opt/application

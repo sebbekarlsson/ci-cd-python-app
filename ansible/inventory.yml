@@ -1,0 +1,9 @@
+web:
+  hosts:
+    157.245.82.37
+  vars:
+    appname: wallapp
+    web_user: www-data
+    web_group: www-data
+    ansible_user: root
+    ansible_ssh_private_key_file: ~/.ssh/id_rsa
