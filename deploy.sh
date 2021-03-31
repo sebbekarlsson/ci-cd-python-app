@@ -1,6 +1,3 @@
-# create build
-./build.sh
-
 # install dependencies required for our application to run
 ansible-playbook -i ansible/inventory.yml ansible/playbooks/install.yml
 
